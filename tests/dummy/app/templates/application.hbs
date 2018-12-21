@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+{{date-time-picker
+  value=selectedDate
+  onUpdate=(action (mut selectedDate))
+  dateFormat='DD/MM/YYYY'
+  timeFormat='HH:mm'
+}}
+
+<!--For debugging-->
+{{selectedDate}}
 
 {{outlet}}

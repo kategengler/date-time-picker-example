@@ -1,0 +1,4 @@
+<input type="time"
+       value="{{moment-format this.value this.timeFormat}}"
+       onchange={{action this.updateTime value="target.value"}}
+       pattern="[0-9]{2}:[0-9]{2}">
